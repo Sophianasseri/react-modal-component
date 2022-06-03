@@ -1,5 +1,6 @@
 import babel from "@rollup/plugin-babel";
 import resolve from '@rollup/plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser'
 import external from 'rollup-plugin-peer-deps-external';
 
 import postcss from 'rollup-plugin-postcss';
@@ -29,6 +30,7 @@ export default [
         }),
         external(),
         resolve(),
+        terser()
       ]
     }
   ];

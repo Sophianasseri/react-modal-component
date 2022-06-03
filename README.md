@@ -14,7 +14,7 @@ npm install react-modal-component
 Import the `Modal`component to your project:
 
 ```sh
-import {Modal} from "react-modal-component"
+import {Modal} from "sn-react-modal-component"
 ```
 
 This component is using 2 props:
@@ -28,16 +28,17 @@ This component is also using `children prop` to add the modal content
 
 ```sh
 import { useState } from "react";
-import { Modal} from "../lib";
+import { Modal} from "sn-react-modal-component";
 
 const App = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {
         setIsOpen(!isOpen);
       };
+    const style = {position: 'absolute', top: '50%', left:'50%', transform : 'translate (-50%, -50%)'}
     return (
         <div>
-            <button style={{position: 'absolute', top: '50%', left:'50%', transform : 'translate (-50%, -50%)'}} 
+            <button style={style} 
             onClick={toggle}>Open Modal</button>
             <Modal isOpen={isOpen} hide={toggle}>
                 Some example text
