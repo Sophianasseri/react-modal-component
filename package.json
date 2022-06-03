@@ -1,10 +1,10 @@
 {
-  "name": "react-modal-component",
+  "name": "simple-react-modal-component",
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": ["dist", "README.md"],
-  "repository": {    "type": "git",    "url": "URL_OF_YOUR_REPOSITORY"  },
+  "repository": {    "type": "git",    "url": "https://github.com/Sophianasseri/react-modal-component.git"  },
  
   "scripts": {
     "start": "react-scripts start",
