@@ -1,4 +1,7 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
+import '../../styles.css';
+
 
 
 export const Modal = ({ isOpen, hide, children }) => {

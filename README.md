@@ -6,7 +6,7 @@ This is a simple react modal component that can be use in your project.
 ## Installation
 
 ```sh
-npm install react-modal-component
+npm install sn-react-modal-component
 ```
 
 ## How to use
@@ -14,7 +14,7 @@ npm install react-modal-component
 Import the `Modal`component to your project:
 
 ```sh
-import {Modal} from "sn-react-modal-component"
+import { Modal } from "sn-react-modal-component"
 ```
 
 This component is using 2 props:
@@ -35,7 +35,12 @@ const App = () => {
     const toggle = () => {
         setIsOpen(!isOpen);
       };
-    const style = {position: 'absolute', top: '50%', left:'50%', transform : 'translate (-50%, -50%)'}
+    const style = {
+    position: 'absolute', 
+    top: '50%', 
+    left:'50%', 
+    transform : 'translate (-50%, -50%)'}
+    
     return (
         <div>
             <button style={style} 
